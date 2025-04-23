@@ -1,0 +1,16 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Juan Pérez",
+      "correo": "juan@example.com"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Laptop",
+      "precio": 1500.00,
+      "stock": 10
+    }
+  ]
+}

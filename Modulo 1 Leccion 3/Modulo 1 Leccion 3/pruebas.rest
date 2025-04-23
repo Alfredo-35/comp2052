@@ -1,0 +1,36 @@
+### Obtener información del sistema
+GET http://127.0.0.1:5000/info
+Content-Type: application/json
+
+###
+
+### Crear un nuevo usuario (válido)
+POST http://127.0.0.1:5000/crear_usuario
+Content-Type: application/json
+
+{
+  "nombre": "Ana Torres",
+  "correo": "ana@example.com"
+}
+
+###
+
+### Crear un nuevo usuario (datos incompletos)
+POST http://127.0.0.1:5000/crear_usuario
+Content-Type: application/json
+
+{
+  "nombre": "Carlos"
+}
+
+###
+
+### Obtener lista de usuarios
+GET http://127.0.0.1:5000/usuarios
+Content-Type: application/json
+
+###
+
+### Ruta inexistente para probar error 404
+GET http://127.0.0.1:5000/noexiste
+Content-Type: application/json
