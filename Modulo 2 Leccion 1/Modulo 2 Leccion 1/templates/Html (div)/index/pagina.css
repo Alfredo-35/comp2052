@@ -1,0 +1,86 @@
+Body{
+    background-color: #5c5470;
+    color:aliceblue;
+}
+#container{
+    Margin-top: 100px;
+}
+header{
+    height: 150px;
+    background-color: #2a2438;
+}
+header h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 80px;
+}
+nav{
+    background-color: #5c5470;
+    height: 40px;
+}
+nav h4{
+    font-size: 20px;
+    text-align:center;
+}
+article{
+    width: 700px;
+    height: 500px;
+    float: left;
+    background-color: #352f44;
+    margin-right: 10px;
+
+}
+aside{
+    width: 250px;
+    height: 85px;
+    background-color: #352f44;
+    float: right;
+}
+footer {
+    padding: 4%;
+    background-color: #5c5470;
+    clear: both;
+}
+footer h1 h6{
+    text-align: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#2a2438
+}
+.square {
+    width: 250px; /* Set the width */
+    height: 395px; /* Set the height */
+    background-color:#5c5470; /* Background color */
+    color: white; /* Text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-align: center; /* Center the text */
+    float:right
+}
+ul {
+    list-style-type: none;
+}
+li a{
+    display: flex;
+    Float:left;
+    color:azure;
+    padding: 10px;
+    text-decoration: none;
+    padding-left: 70px;
+    padding-right: 70px;
+
+
+}
+li a:hover{
+    color: #dbd8e3;
+    background-color: #352f44;
+}
+

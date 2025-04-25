@@ -1,0 +1,120 @@
+Body{
+    background-color: #5c5470;
+    color:aliceblue;
+}
+#container{
+    margin-bottom: 30px;
+}
+header{
+    height: 150px;
+    background-color: #2a2438;
+}
+header h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 80px;
+}
+nav{
+    background-color: #5c5470;
+    height: 40px;
+}
+nav h4{
+    font-size: 20px;
+    text-align:center;
+}
+div img {
+    width: 400px;
+    height: 200px;
+    border: 2px solid #352f44;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #2a2438;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+div img hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#2a2438
+}
+ul {
+    list-style-type: none;
+}
+li a{
+    display: flex;
+    Float:left;
+    color:azure;
+    padding: 10px;
+    text-decoration: none;
+    padding-left: 140px;
+    padding-right: 140px;
+
+
+}
+div ul {
+    list-style-type: none;
+}
+div li a{
+    display: flex;
+    Float:left;
+    color:azure;
+    padding: 10px;
+    text-decoration: none;
+    padding-left: 141px;
+    padding-right: 141px;
+
+
+}
+div li a:hover{
+    color: #dbd8e3;
+    background-color: #352f44;
+}
+div li b{
+    display: flex;
+    float:right;
+    padding:10px;
+    text-decoration: none;
+    padding-left: 192px;
+    padding-right: 211px;
+}
+div li c{
+    display: flex;
+    float:right;
+    padding:10px;
+    text-decoration: none;
+    padding-left: 200px;
+    padding-right: 250px;
+}
+div li d{
+    display: flex;
+    float:right;
+    padding:10px;
+    text-decoration: none;
+    padding-left: 180px;
+    padding-right: 250px;
+}
+div li e{
+    display: flex;
+    float:right;
+    padding:10px;
+    text-decoration: none;
+    padding-left: 180px;
+    padding-right: 250px;
+}
+div li f{
+    display: flex;
+    float:right;
+    padding:10px;
+    text-decoration: none;
+    padding-left: 180px;
+    padding-right: 250px;
+}
