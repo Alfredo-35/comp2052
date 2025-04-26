@@ -1,0 +1,27 @@
+### Ruta pública (disponible para todos)
+GET http://127.0.0.1:5000/
+Content-Type: application/json
+
+###
+
+### Acceder como usuario normal a /user
+GET http://127.0.0.1:5000/user
+Content-Type: application/json
+
+###
+
+### Acceder como usuario normal a /admin (debería dar 403)
+GET http://127.0.0.1:5000/admin
+Content-Type: application/json
+
+###
+
+### Acceder como admin a /admin (cuando current_user_role sea 'admin')
+GET http://127.0.0.1:5000/admin
+Content-Type: application/json
+
+###
+
+### Acceder como admin a /user (cuando current_user_role sea 'admin')
+GET http://127.0.0.1:5000/user
+Content-Type: application/json
