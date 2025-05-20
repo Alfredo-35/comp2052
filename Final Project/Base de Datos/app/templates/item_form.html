@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}Item Form{% endblock %}
+
+{% block content %}
+<h3>{{ 'Edit Item' if form.id.data else 'New Item' }}</h3>
+
+<form method="POST" action="">
+  {{ form.hidden_tag() }}
+  {{ form.id }}
+
+  <div class="mb-3">
+    {{ form.nombre.label(class="form-label") }}
+    {{ form.nombre(class="form-control", placeholder="Enter item name") }}
+    {% for error in form.nombre.errors %}
+      <div class="text-danger">{{ error }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="mb-3">
+    {{ form.categoria.label(class="form-label") }}
+    {{ form.categoria(class="form-control", placeholder="Enter category") }}
+    {% for error in form.categoria.errors %}
+      <div class="text-danger">{{ error }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="mb-3">
+    {{ form.cantidad.label(class="form-label") }}
+    {{ form.cantidad(class="form-control", placeholder="Enter quantity") }}
+    {% for error in form.cantidad.errors %}
+      <div class="text-danger">{{ error }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="mb-3">
+    {{ form.precio_estimado.label(class="form-label") }}
+    {{ form.precio_estimado(class="form-control", placeholder="Enter estimated price") }}
+    {% for error in form.precio_estimado.errors %}
+      <div class="text-danger">{{ error }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="mb-3">
+    {{ form.ubicacion.label(class="form-label") }}
+    {{ form.ubicacion(class="form-control", placeholder="Enter location") }}
+    {% for error in form.ubicacion.errors %}
+      <div class="text-danger">{{ error }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="mb-3">
+    {{ form.fecha_adquisicion.label(class="form-label") }}
+    {{ form.fecha_adquisicion(class="form-control") }}
+    {% for error in form.fecha_adquisicion.errors %}
+      <div class="text-danger">{{ error }}</div>
+    {% endfor %}
+  </div>
+
+  <button type="submit" class="btn btn-primary">Save</button>
+  <a href="{{ url_for('main.dashboard') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
